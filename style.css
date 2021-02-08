@@ -20,3 +20,63 @@ body {
 }
 
 
+.under{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: none;
+}
+
+.column {
+  float: left;
+  width: 49%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+ .columnleft {
+  float: left;
+  width: 60%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.columnright {
+  float: right;
+  width: 33%;
+  margin-top: 100px;
+  padding: 0 8px;
+} 
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+a{
+  color: black;
+}
+
+.content-footer {
+    width: 100%;
+    padding: 10px 10px;
+    text-align: center;
+    background-color:#65a09d;
+    text-decoration: white;
+  }
+
+.checked{
+    text-decoration: line-through;
+    background-color: #e0e0e0;
+  }
+.Faculty > li {
+  text-align:left;
+  list-style: none;
+  padding: 10px 10px;
+  background-color: #fff;
+  margin: 12px 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,.16);
+  border-radius: 3px;
+  transition: .4s;
+}
