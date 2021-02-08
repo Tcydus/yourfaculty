@@ -120,7 +120,7 @@ body {
   <a href="#news">แบบประเมิน</a>
   <a href="#contact">สาขาน่าสนใจ</a>
   <div class="dropdown">
-    <button class="dropbtn" onclick="myFunction()">Dropdown
+    <button class="dropbtn" onclick="navDropdown()">Dropdown
       <i class="fa fa-caret-down"></i></button>
     <div class="dropdown-content" id="myDropdown">
       <a href="#">Link 1</a>
@@ -128,7 +128,7 @@ body {
       <a href="#">Link 3</a>
     </div>
   </div>
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+  <a href="javascript:void(0);" class="icon" onclick="navDropdown()"><i class="fa fa-bars"></i></a>
 </div>
 
 
@@ -169,7 +169,7 @@ body {
 
 
 <script>
-  function myFunction() {
+  function navDropdown() {
   document.getElementById("myDropdown").classList.toggle("show");
 }
 
@@ -186,7 +186,7 @@ window.onclick = function(event) {
     }
   }
 }
-function myFunction() {
+function navDropdown() {
   var x = document.getElementById("myTopnav");
   if (x.className === "topnav") {
     x.className += " responsive";
