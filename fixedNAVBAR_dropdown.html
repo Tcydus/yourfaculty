@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<!--ref https://www.youtube.com/watch?v=amteLkLin6s&ab_channel=zFunxWebDevelopementIdeas-->   <!--แก้fixed relative-->
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,
+html {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column
+}
+
+.navList {
+  background-color: #4a8e8a;
+  box-shadow: 0 2px 8px 0px rgba(0, 0, 0, 0.2);
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  z-index: 100;
+  /*keep it high*/
+}
+
+.navList li {
+  float: left;
+  position: relative;
+}
+
+.content {
+  flex: 1;
+  overflow: auto;
+  padding: 8px;
+}
+
+.navList a {
+  color: #fff;
+  padding: 15px;
+  text-decoration: none;
+  display: block;
+  transition: .3s;
+  white-space: nowrap;
+  font-size: 17px;
+}
+.navList a.active {
+  background-color: #0c1e1d;
+  color: white;
+  font-weight: bold;
+}
+.navList a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.navList > li > .dropdown {
+  visibility: hidden;
+  position: absolute;
+  background-color: #65a09d;
+  box-shadow: 2px 4px 8px 0px rgba(0, 0, 0, 0.2);
+  transition: .1s;
+  opacity: 0;
+}
+
+.navList > li:hover > div {
+  visibility: visible;
+  opacity: 1;
+}
+</style>
+</head>
+<body>
+
+<ul class="navList">
+    <li><a class="active"  href="#one">HOME</a></li>
+    <li><a href="#two">สาขาที่น่าสนใจ</a></li>
+    <li><a href="#three">แบบประเมิน</a></li>
+    <li><a href="#four">DROPDOWN <i class="fa fa-caret-down"></i></a>
+        <div class="dropdown">
+            <a href="#">Link 1___________</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div></li>
+  </ul>
+  
+  <div class="content">
+    <div style="padding-left:16px">
+        <h2 style="color: chartreuse;">Top Navigation Example</h2>
+        <p>TEST TEXT CONTENT</p>
+        <p>TEST TEXT CONTENT</p>
+        <p>TEST TEXT CONTENT</p>
+        <p>TEST TEXT CONTENT</p>
+        <p>TEST TEXT CONTENT</p>
+        <p>TEST TEXT CONTENT</p>
+        <p>TEST TEXT CONTENT</p>
+        <p>TEST TEXT CONTENT</p>
+        <p>TEST TEXT CONTENT</p>
+        <p>TEST TEXT CONTENT</p>
+        <p>TEST TEXT CONTENT</p>
+        <p>TEST TEXT CONTENT</p>
+        <p>TEST TEXT CONTENT</p>
+        <p>TEST TEXT CONTENT</p>
+        <p>TEST TEXT CONTENT</p>
+        <p>TEST TEXT CONTENT</p>
+        <p>TEST TEXT CONTENT</p>
+        <p>TEST TEXT CONTENT</p>
+        <p>TEST TEXT CONTENT</p>
+        <p>TEST TEXT CONTENT</p>
+        <p>TEST TEXT CONTENT</p>
+        <p>TEST TEXT CONTENT</p>
+        <p>TEST TEXT CONTENT</p>
+        <p>TEST TEXT CONTENT</p>
+        <p>TEST TEXT CONTENT</p>
+        <p>TEST TEXT CONTENT</p>
+        <p>TEST TEXT CONTENT</p>
+        <p>TEST TEXT CONTENT</p>
+        <p>TEST TEXT CONTENT</p>
+        <p>TEST TEXT CONTENT</p>
+        <p>TEST TEXT CONTENT</p>
+        <p>TEST TEXT CONTENT</p>
+        <p>TEST TEXT CONTENT</p>
+      
+      
+      </div>
+  </div>
+
+
+
+
+
+
+  
+</body>
+</html>
