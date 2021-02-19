@@ -44,6 +44,7 @@ html {
   transition: .3s;
   white-space: nowrap;
   font-size: 17px;
+  text-align: left;
 }
 .navList a.active {
   background-color: #0c1e1d;
@@ -72,15 +73,19 @@ html {
 <body>
 
 <ul class="navList">
+  <li style="margin: 0px 5px; text-align: center;">LOGO</li>
     <li><a class="active"  href="#one">HOME</a></li>
-    <li><a href="#two">สาขาที่น่าสนใจ</a></li>
-    <li><a href="#three">แบบประเมิน</a></li>
-    <li><a href="#four">DROPDOWN <i class="fa fa-caret-down"></i></a>
-        <div class="dropdown">
-            <a href="#">Link 1___________</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
-          </div></li>
+    <li><a href="#two">สาขาที่น่าสนใจ <i class="fa fa-caret-down"></i></a>
+      <div class="dropdown">
+        <a href="#">สาขาด้านวิศวกรรมศาตร์</a>
+        <a href="#">สาขาด้านสุขภาพ</a>
+        <a href="#">สาขาด้านการบริหารธุรกิจและการบริการ</a>
+        <a href="#">สาขาด้านวิทยาศาสตร์และคณิตศาสตร์</a>
+        <a href="#">สาขาด้านอักษรศาสตร์และมนุษย์ศาสตร์</a>
+        <a href="#">สาขาด้านนิติศาสตร์และรัฐศาสตร์</a>
+        <a href="#">สาขาด้านนิเทศศาสตร์ศิลปศาสตร์และการออกแบบ</a>
+      </div></li>
+    <li><a href="#three">เกี่ยวกับเรา</a></li>
   </ul>
   
   <div class="content">
