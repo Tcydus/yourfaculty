@@ -12,29 +12,35 @@ var legendPanel = {
 
 var dataset = [{
   data: [{
-    yValue: 'Team A',
+    yValue: 'Rank 1',
+    xValue: 40
+  }, {
+    yValue: 'Rank 2',
+    xValue: 32
+  }, {
+    yValue: 'Rank 3',
+    xValue: 28
+  }, {
+    yValue: 'Rank 4',
     xValue: 25
   }, {
-    yValue: 'Team B',
+    yValue: 'Rank 5',
+    xValue: 20
+  }, {
+    yValue: 'Rank 6',
+    xValue: 19
+  }, {
+    yValue: 'Rank 7',
+    xValue: 18
+  }, {
+    yValue: 'Rank 8',
+    xValue: 17
+  }, {
+    yValue: 'Rank 9',
     xValue: 10
   }, {
-    yValue: 'Team C',
-    xValue: 60
-  }, {
-    yValue: 'Team D',
-    xValue: 80
-  }, {
-    yValue: 'Team E',
-    xValue: 35
-  }, {
-    yValue: 'Team F',
-    xValue: 45
-  }, {
-    yValue: 'Team G',
-    xValue: 15
-  }, {
-    yValue: 'Team G',
-    xValue: 15
+    yValue: 'Rank 10',
+    xValue: 5
   }],
   name: 'TCAS63'
   }];
