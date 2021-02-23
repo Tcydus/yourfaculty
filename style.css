@@ -208,13 +208,14 @@ img {
 
 #list a {
   color: black;
+  text-decoration: none;
 }
 
 .content-footer {
   width: 100%;
   padding: 10px 10px;
   text-align: center;
-  background-color: #65a09d;
+  background-color: none;
   text-decoration: white;
 }
 
@@ -226,11 +227,12 @@ img {
   text-align: left;
   list-style: none;
   padding: 10px 10px;
-  background-color: #fff;
+  background-color: #9fc4c2;
   margin: 12px 0;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.16);
   border-radius: 3px;
   transition: 0.4s;
+  font-size: medium;
 }
 
 /* -------------------------- Navbar -----------------------------        */
