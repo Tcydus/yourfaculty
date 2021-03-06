@@ -1,0 +1,96 @@
+<!--ref https://www.codespeedy.com/change-youtube-iframe-video/-->
+<!DOCTYPE html>
+<html>
+<head>
+    <link type="text/css" rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  iframe{
+    margin-top:5px;
+    width:300px;
+    height:205px;
+  }
+.playlistsBox {
+      background-color: #9fc4c2;          /*don't forgot to adjust*/
+      padding: 10px 10px;
+      width: max-content;
+      height:fit-content;
+      text-align: center;
+      box-shadow: 1px 3px 2px #213938a7;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      font-size: 20px;
+      color: #213938;
+    }
+.vidBox{
+    margin:auto;
+    background:rgb(29, 163, 145);
+    padding:3px;
+    border-radius:10px;
+    width:fit-content;
+    height:fit-content;
+    }
+.vidbar{
+    background-color: #022825;
+    height:fit-content;
+    border-radius:5px;
+    box-shadow: 0 2px 8px 0px rgba(0, 0, 0, 0.2);
+}
+.youtubeBtn{
+  cursor: pointer;
+  border-radius:3px ;
+  padding: 5px;
+  border:0;
+  margin:5px 5px;
+  background-color: rgb(30, 117, 99);
+  color:rgb(225, 247, 237);
+  outline: none;
+}
+
+</style>
+</head>
+<body>
+
+<div class="playlistsBox">
+    <h1 style="margin:5px 0px;">playlist</h1>
+    <div class="vidBox">
+      <div class="vidbar">
+        <button class="youtubeBtn" id="button1">TCAS</button>
+        <button class="youtubeBtn" id="button2">ONET</button>
+        <button class="youtubeBtn" id="button3">GAT/PAT</button>
+        <button class="youtubeBtn" id="button4">9วิชาฯ</button>
+        </div>
+
+        <iframe id="playlist" src="https://youtube.com/embed/videoseries?list=PLEb4MZumkF3fuyd1ugjjCtImj1NNFKYUS" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen ></iframe>
+        <div id="playnow" style="color:rgb(226, 255, 245) ;padding:10px 0px;">TCAS</div>
+    </div>
+
+</div>
+
+
+<script type="text/javascript">
+
+document.getElementById("button1").onclick = function() {
+    document.getElementById('playlist').src = "https://youtube.com/embed/videoseries?list=PLEb4MZumkF3fuyd1ugjjCtImj1NNFKYUS";
+    var x = document.getElementById("playnow");
+     x.innerHTML = "TCAS";
+};
+document.getElementById("button2").onclick = function() {
+    document.getElementById('playlist').src = "https://youtube.com//embed/videoseries?list=PLEb4MZumkF3fPAXNaHMLilgl0hjkeiJsI";
+    var x = document.getElementById("playnow");
+     x.innerHTML = "ONET";
+};
+document.getElementById("button3").onclick = function() {
+    document.getElementById('playlist').src = "https://youtube.com/embed/videoseries?list=PLEb4MZumkF3dwQNj8zFWUI6QBq53xaIlV";
+    var x = document.getElementById("playnow");
+     x.innerHTML = "GAT/PAT";
+};
+document.getElementById("button4").onclick = function() {
+    document.getElementById('playlist').src = "https://youtube.com/embed/videoseries?list=PLEb4MZumkF3fgAR01Sw1eq4bwy9bPsPeo";
+    var x = document.getElementById("playnow");
+     x.innerHTML = "9วิชาสามัญ";
+};
+
+</script>
+
+</body>
+</html>
