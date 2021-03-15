@@ -69,10 +69,10 @@
 
       </div>
 
-      <div class="main item" style="background-color: rgba(221, 123, 47, 0.34);width:content;padding:5vh 0vh;">      <!--*อย่าลืมเอาสีออก*-->
+      <div class="main item" style="background-color: #f2dac8;width:content;padding:5vh 0vh;">      <!--*อย่าลืมเอาสีออก*-->
 
           <div class="title item" style="margin-top:0%">
-            <h1 style="color:#65a09d; font-family: sans-serif;">TCAS</h1>
+            <h1 style="color:#206662; font-family: sans-serif;">TCAS</h1>
             </div>
             <div class="video items">
               <iframe src="https://www.youtube.com/embed/FFFIQekzt0o?html5=1&enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -84,7 +84,7 @@
               </div>
 
             <div class="title item">
-            <h1 style="color:#65a09d; font-family: sans-serif;">GAT/PAT</h1>
+            <h1 style="color:#3d807c; font-family: sans-serif;">GAT/PAT</h1>
             </div>
             <div class="video items">
               <iframe src="https://www.youtube.com/embed/8k0H6F4RzXE?html5=1&enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -96,7 +96,7 @@
               </div>
 
             <div class="title item">
-            <h1 style="color:#65a09d; font-family: sans-serif;">ความรู้พื้นฐาน</h1>
+            <h1 style="color:#3d807c;;">ความรู้พื้นฐาน</h1>
             </div>
             <div class="video items">
               <iframe src="https://www.youtube.com/embed/YCOBEYjILkM?html5=1&enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -110,29 +110,6 @@
       </div>
 
 
-<!-- ลบแล้วslideข่าวหาย
-      <div class="faculty-info item">
-        <footer class="content-footer">
-          <div class="row">
-            <div class="columnleft">
-              <h1 style="color: #65a09d; font-family: sans-serif;">รายชื่อคณะต่างๆ</h1>
-                <div class="element-list">
-                  <ul id="list" class="Faculty">
-                    <li id="ENG" ><a class="css-is-deranged" href="ตรงนี้ใส่ URL คณะ">สาขาด้านวิศวกรรมศาสตร์</a></li>
-                    <li id="DOC" ><a class="css-is-deranged" href="ตรงนี้ใส่ URL คณะ">สาขาด้านสุขภาพ</a></li>
-                    <li id="BUS" ><a class="css-is-deranged" href="ตรงนี้ใส่ URL คณะ/">สาขาด้านการบริหารธุรกิจและการบริการ</a></li>
-                    <li id="SCI" ><a class="css-is-deranged" href="ตรงนี้ใส่ URL คณะ/">สาขาด้านวิทยาศาสตร์</a></li>
-                    <li id="TEA" ><a class="css-is-deranged" href="ตรงนี้ใส่ URL คณะ/">สาขาด้านอักษรศาสตร์และมนุษย์ศาสตร์</a></li>
-                    <li id="LAW" ><a class="css-is-deranged" href="ตรงนี้ใส่ URL คณะ/">สาขาด้านนิติศาสตร์และรัฐศาสตร์</a></li>
-                    <li id="ACT" ><a class="css-is-deranged" href="ตรงนี้ใส่ URL คณะ/">สาขาด้านนิเทศศาสตร์และการออกแบบ</a></li>
-                  </ul>
-                </div>
-            </div>
-          </div>
-        </footer>
-
-      </div>
--->
 
 
       <div class="contact-us item">
@@ -324,6 +301,37 @@
     tag.src = "https://www.youtube.com/iframe_api";
     var firstScriptTag = document.getElementsByTagName('script')[0];
     firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+    var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides((slideIndex += n));
+}
+
+function currentSlide(n) {
+  showSlides((slideIndex = n));
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {
+    slideIndex = 1;
+  }
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex - 1].style.display = "block";
+  dots[slideIndex - 1].className += " active";
+}
 
     </script>
   </body>
