@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
 
-*{
+* {
   box-sizing: border-box;
 }
 
@@ -11,13 +11,13 @@ body {
   margin: 0 auto;
 }
 
- /* .item{
+  /* .item{
   padding: 8px;
   background-color: white;
   border: 4px solid rgb(255, 175, 71);
   border-radius: 6px;
   box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
-} */
+}  */
 
 .container-block {
   display: grid;
@@ -27,9 +27,9 @@ body {
 
 @media (min-width: 1020px) {
   .container-block {
-    grid-template-columns: repeat(12,1fr) ;
+    grid-template-columns: repeat(12, 1fr);
   }
- 
+
   .container-block .navigation {
     grid-column: 1 / span 12;
   }
@@ -43,8 +43,7 @@ body {
     grid-column: 2 / span 10;
 
     /*internal component in main*/
-    grid-template-columns: repeat(8,1fr) ;
-    
+    grid-template-columns: repeat(8, 1fr);
   }
 
   .container-block .main .text {
@@ -68,14 +67,12 @@ body {
   }
 
 }
-
 /* -------------------------- Text info -----------------------------  */
 
 .text-padding {
   width: 100%;
   padding: 10px 10px;
   text-align: center;
-  /* background-color:#65a09d; */
   text-decoration: white;
 }
 
@@ -256,6 +253,7 @@ body {
 footer{
   background-color: #4a8e8a;
   padding:30px 0px;
+  height: auto;
 }	       
 
 .logo{
