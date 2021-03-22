@@ -27,10 +27,11 @@
   .container-block .main .radar-graph {
     grid-column: 3 / span 1;
     grid-row: 1 / span 4;
+    
   }
 
   .container-block .main .button {
-    grid-column: 1/span 3;
+    grid-column: 1/span 2;
     grid-row: 5;
     
   }
@@ -45,6 +46,15 @@
   .container-block .contact-us {
     grid-column: 1 / span 12;
     /* grid-row: 15 / 18; */
+  }
+  .center {
+    margin: 50px 0 50px 0;
+    position: relative;
+    top : 50%;
+    bottom : 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
   }
 }
 
@@ -167,3 +177,34 @@
   fill: #4a8e8a;
 }
 
+
+.submit-button {
+  
+
+
+  /* padding: 20px 50px; */
+    padding: 20px 20px;
+  font-size: 14px;
+  text-align: center;
+  
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #32695f;
+  border: none;
+  border-radius: 15px;
+  width: fit-content;
+
+
+  box-shadow: 1px 3px 2px #213938a7;
+}
+
+.center {
+  margin: 0 0 50px 0;
+  position: relative;
+  top : 50%;
+
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
