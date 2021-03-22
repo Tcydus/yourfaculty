@@ -21,7 +21,7 @@ body {
 
 .container-block {
   display: grid;
-  height: 200vh;
+  height: 150vh;
   grid-template-rows: 100px;
 }
 
