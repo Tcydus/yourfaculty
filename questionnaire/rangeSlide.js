@@ -32,6 +32,10 @@ var data = [
 		{
 		  "subject": "ศิลปะ",
 		  "point": 0
+		},
+    {
+		  "subject": "สังคม",
+		  "point": 0
 		}
 	  ]
 	}
@@ -39,7 +43,7 @@ var data = [
 
 function addHTMLSubjuct(){
   const list = document.getElementById("rangeInput-field");
-  var subjectList = ["คณิตศาสตร์","ภาษาอังกฤษ","","","","",""]
+  var subjectList = ["คณิตศาสตร์","ภาษาอังกฤษ","","","","","",""]
   
   subjectList.forEach(function(subject,index){
     dictData = data[0].values[index];
