@@ -424,8 +424,10 @@ footer{
 
 iframe{
   margin-top:5px;
-  width:370px;
+  width:auto;
   height:205px;
+  display: block;
+  margin: 5% auto;
 }
 .playlistsBox {
     background-color: rgb(29, 163, 145);          /*don't forgot to adjust*/
@@ -449,10 +451,10 @@ iframe{
 .vidbar{
   background-color: #022825;
   height:fit-content;
-  width: 270px;
+  width: fit-content;
   border-radius:5px;
   box-shadow: 0 2px 8px 0px rgba(0, 0, 0, 0.2);
-  
+  margin:0 auto;
 }
 .youtubeBtn{
 cursor: pointer;
