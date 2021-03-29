@@ -288,52 +288,64 @@ img {
   opacity: 1;
 }
 
-/* -------------------------- Visualization -----------------------------        */
+/* -------------------------- TCAS  Visualization -----------------------------        */
+.noActiveBtn {
+  
 
-.axis path,
-.axis line {
+
+  padding: 10px 5px;
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+
+  border: none;
+  border-radius: 15px;
+  width: fit-content;
+  background-color : white;
+  color : #32695f;
+
+
+  box-shadow: 1px 3px 2px #213938a7;
+}
+
+#tcas63Btn:focus, #tcas62Btn:focus, #tcas61Btn:focus {
+  color: #fff;
+  background-color: #32695f;
+  border: none;
+  box-shadow: 1px 3px 2px #213938a7;
+}
+.y.axis line {
   fill: none;
-  stroke: black;
+}
+
+.x.axis line {
+  fill: none;
+  stroke: #e0e0e0;
   shape-rendering: crispEdges;
 }
-.axis text {
-  font-family: sans-serif;
-  font-size: 11px;
-}
-#tooltip {
-  position: absolute;
-  text-align: center;
-  width: 40px;
-  height: auto;
-  padding: 10px;
-  background-color: white;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
-  -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
-  -moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
-  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
-  pointer-events: none;
-}
-#tooltip.hidden {
+
+.axis path {
   display: none;
 }
-#tooltip p {
-  margin: 0;
-  font-family: sans-serif;
-  font-size: 16px;
-  line-height: 20px;
+
+.brush .extent {
+  fill-opacity: .125;
+  shape-rendering: crispEdges;
 }
 
-.legend-row {
-  height: 50px;
+.resize {
+  display: inline !important; /* show when empty */
+  fill: #7A7A7A;
+  fill-opacity: 1;
+  stroke: #7A7A7A;
+  stroke-width: 2px;
 }
 
-.legend-element {
-  width: 10px;
-  height: 20px;
-  float: left;
+.bar {
+  shape-rendering: crispEdges;
 }
+
 
 /* -------------------------- Find yourself -----------------------------        */
 
