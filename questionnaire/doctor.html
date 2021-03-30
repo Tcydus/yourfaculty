@@ -12,6 +12,8 @@
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="question.css">
+    <link rel="stylesheet" href="result.css">
+
     <link rel="stylesheet" href="radarChart.css">
     		<!-- D3.js -->
 		<script src="https://d3js.org/d3.v5.min.js"></script>
@@ -91,24 +93,23 @@
       </div>
 
       <div class="main item">
-        <div class="input-bar item">
-          <h1 style="color:#65a09d; font-family: sans-serif; margin-bottom: 40px;">ให้คะแนนวิชาที่คุณถนัดสิ</h1>
-          <h4 style="color:#65a09d; font-family: sans-serif; margin-bottom: 40px;">แบบทดสอบที่จะให้คุณกรอกคะแนนความชื่นชอบในแต่ละรายวิชาเพื่อประมวณผลว่าคุณเหมาะกับสาขาวิชาใด</h4>
+        <div class="result-info resultText item">
+          <h4 style="margin-top: 20px;">ผลลัพธ์ของคุณคือ</h4>
+          <h1>สาขาด้านสุขภาพ</h1> 
+          <h4 style="margin-top: 20px;">เป็นบุคคลที่มีความอดทนและพยายาม ศึกษาเกี่ยวกับระบบร่างกายมนุษย์ กายวิภาค สรีรวิทยา พันธุศาสตร์</h4>
+          <img src="../img/art/Doctor.jpg" />
+          
+        </div>
 
-          <div id="rangeInput-field">
-          </div>
-        </div>
-        
-        <div class="radar-graph item">
-          <h3 style="color:#65a09d; font-family: sans-serif; margin-bottom: 40px; text-align: center;">ภาพรวมรายวิชาที่เลือก</h3>
-          <div class="radarChart" style="text-align: center;"></div>
-        </div>
-        
-        
         <div class="button item">
           
-          <!-- <button style= "padding: 20px 50px"class="submit-button center" onclick="document.location='result.html'">Submit</button> -->
-          <button style= "padding: 20px 50px"class="submit-button center" onclick=analysisLocation()>Submit</button>
+
+            <button class="submit-button center" onclick="document.location='question.html'">ทำแบบทดสอบอีกครั้ง</button>
+            <button class="submit-button center" onclick="document.location='../index.html'">Home</button>
+        
+
+        </div>
+
 
         </div>
         
@@ -123,7 +124,7 @@
               
                        <div class="col-md-4 col-sm-6 col-xs-12">
                          <!-- <span class="logo"><img src="Z.png" width="100" height="100"></span> -->
-                         <span class="logo"><img src="/LOGO.png" width="50%" height="50%"></span>
+                         <span class="logo"><img src="../LOGO.png" width="50%" height="50%"></span>
                        </div>
                        
                        <div class="col-md-4 col-sm-6 col-xs-12">
