@@ -17,62 +17,7 @@ d3 = d3version3;
 };
 			
 
-// const sample = [
-// 	{
-// 	  "key": "sem1/2562",
-// 	  "values": [
-// 		{
-// 		  "subject": "PROGRAMMING FUNDAMENTALS",
-// 		  "weight": 3,
-// 		  "point": 4
-// 		},
-// 		{
-// 		  "subject": "COMPUTER ENGINEERING EXPLORA",
-// 		  "weight": 1,
-// 		  "point": 4
-// 		},
-// 		{
-// 		  "subject": "INTRODUCTION TO ENGINEERING",
-// 		  "weight": 1,
-// 		  "point": 3.5
-// 		},
-// 		{
-// 		  "subject": "ENGINEERING MATHEMATICS I",
-// 		  "weight": 3,
-// 		  "point": 4
-// 		},
-// 		{
-// 		  "subject": "PHYSICS I",
-// 		  "weight": 3,
-// 		  "point": 3.5
-// 		},
-// 		{
-// 		  "subject": "PHYSICS LABORATORY I",
-// 		  "weight": 1,
-// 		  "point": 4
-// 		},
-// 		{
-// 		  "subject": "ENGLISH I",
-// 		  "weight": 3,
-// 		  "point": 4
-// 		},
-// 		{
-// 		  "subject": "MAN AND SOCIETY",
-// 		  "weight": 3,
-// 		  "point": 3.5
-// 		},
-// 		{
-// 		  "subject": "TABLE TENNIS",
-// 		  "weight": 1,
-// 		  "point": 3
-// 		}
-// 	  ]
-// 	}
-//   ]
-  RadarChart(".radarChart", data, Option1);
-// d3.json("sem1-2562.json", function(error, data){
-// 	RadarChart(".radarChart1", data, Option1);
-// });
+RadarChart(".radarChart", data, Option1);
 
 
 function RadarChart(id, data, options) {
@@ -97,14 +42,13 @@ function RadarChart(id, data, options) {
 	if('undefined' !== typeof options){
 	  for(var i in options){
 		if('undefined' !== typeof options[i]){ cfg[i] = options[i]; }
-	  }//for i
-	}//if
+	  }
+	}
 	
 	// convert the nested data passed in
 	// into an array of values arrays
 	data = data.map(function(d) { return d.values })
-	// console.log(data)
-	// console.log(data[0])
+
 	//If the supplied maxValue is smaller than the actual one, replace by the max in the data
 	var maxValue = 5;
 		
