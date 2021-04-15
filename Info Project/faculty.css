@@ -222,14 +222,14 @@ body {
 }
 
 /* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
+.newsFade {
+  -webkit-animation-name: newsFade;
   -webkit-animation-duration: 1.5s;
-  animation-name: fade;
+  animation-name: newsFade;
   animation-duration: 1.5s;
 }
 
-@-webkit-keyframes fade {
+@-webkit-keyframes newsFade {
   from {
     opacity: 0.4;
   }
@@ -238,7 +238,7 @@ body {
   }
 }
 
-@keyframes fade {
+@keyframes newsFade {
   from {
     opacity: 0.4;
   }
