@@ -18,7 +18,8 @@ d3 = d3version3;
 			
 
 RadarChart(".radarChart", data, Option1);
-
+var slideIndex = 1;
+showSlides(slideIndex);
 
 function RadarChart(id, data, options) {
 	d3 = d3version3;
