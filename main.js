@@ -3,12 +3,12 @@ const  btn = document.querySelector("#btn");
 const list = document.querySelector("#list");
 var el = document.getElementsByTagName('li');
 
-var imgENG = document.getElementById("imgENG");
-    imgDOC = document.getElementById("imgDOC");
-    imgBUS = document.getElementById("imgBUS");
-    imgSCI = document.getElementById("imgSCI");
-    imgTEA = document.getElementById("imgTEA");
-    imgLAW = document.getElementById("imgLAW");
+var imgENG = document.getElementById("imgENG"),
+    imgDOC = document.getElementById("imgDOC"),
+    imgBUS = document.getElementById("imgBUS"),
+    imgSCI = document.getElementById("imgSCI"),
+    imgTEA = document.getElementById("imgTEA"),
+    imgLAW = document.getElementById("imgLAW"),
     imgACT = document.getElementById("imgACT");
 
 ENG.onmouseover = function(){
