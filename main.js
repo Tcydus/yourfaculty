@@ -67,11 +67,11 @@ ACT.onmouseout = function(){
     imgACT.style.display ="none";
     }
 
-list.onclick = function(ev){
-    if(ev.target.tagName == 'LI'){
-         ev.target.classList.toggle('checked');
-    }
-    };
+// list.onclick = function(ev){
+//      if(ev.target.tagName == 'LI'){
+//           ev.target.classList.toggle('checked');
+//      }
+//      };
 
 
 // News feed slide
@@ -105,4 +105,28 @@ function showSlides(n) {
   slides[slideIndex - 1].style.display = "block";
   dots[slideIndex - 1].className += " active";
 }
+
+// -------------- Play list Script --------------- //
+
+document.getElementById("button1").onclick = function() {
+    document.getElementById('playlist').src = "https://youtube.com/embed/videoseries?list=PLEb4MZumkF3fuyd1ugjjCtImj1NNFKYUS";
+    var x = document.getElementById("playnow");
+     x.innerHTML = "TCAS";
+};
+document.getElementById("button2").onclick = function() {
+    document.getElementById('playlist').src = "https://youtube.com//embed/videoseries?list=PLEb4MZumkF3fPAXNaHMLilgl0hjkeiJsI";
+    var x = document.getElementById("playnow");
+     x.innerHTML = "ONET";
+};
+document.getElementById("button3").onclick = function() {
+    document.getElementById('playlist').src = "https://youtube.com/embed/videoseries?list=PLEb4MZumkF3dwQNj8zFWUI6QBq53xaIlV";
+    var x = document.getElementById("playnow");
+     x.innerHTML = "GAT/PAT";
+};
+document.getElementById("button4").onclick = function() {
+    document.getElementById('playlist').src = "https://youtube.com/embed/videoseries?list=PLEb4MZumkF3fgAR01Sw1eq4bwy9bPsPeo";
+    var x = document.getElementById("playnow");
+     x.innerHTML = "9วิชาสามัญ";
+};
+
 
