@@ -37,6 +37,7 @@ document.getElementById("tcas61Btn").addEventListener("click", function () {
 
 callTCASGraph();
 
+//Function that call a chart with specific data (TCAS63 TCAS62 TCAS61)
 function callTCASGraph() {
   if (tcas63Flag) {
     d3.json("TCASData/TCAS63.json", function (error, dataTemp) {
@@ -67,8 +68,7 @@ function callTCASGraph() {
   }
 }
 
-
-
+//Function that create a chart
 function TCASBarChart(id, visible) {
   //Didn't execute algorithm when invisible
   if (!visible) return;
@@ -282,7 +282,7 @@ function TCASBarChart(id, visible) {
   //Start the brush
   gBrush.call(brush.event);
 
-}//init
+}
 
 //Function runs on a brush move - to update the big bar chart
 function update(data) {
@@ -434,7 +434,6 @@ function brushend() {
   if (!scrolling) update(updatedData);
 }
 
-//Based on http://bl.ocks.org/mbostock/6498000
 //What to do when the user clicks on another location along the brushable bar chart
 function brushcenter() {
   var target = d3.event.target,
