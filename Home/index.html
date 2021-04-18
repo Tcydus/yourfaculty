@@ -21,8 +21,8 @@
 
           <ul class="navList">
             <li><a class="active"  href="index.html">HOME</a></li>
-            <li><a href="questionnaire/question.html">แบบทดสอบ</a></li>
-            <li><a href="#four">สาขาแนะนำ<i class="fa fa-caret-down"></i></a>
+            <li><a href="/questionnaire/question.html">แบบทดสอบ</a></li>
+            <li><a>สาขาแนะนำ<i class="fa fa-caret-down"></i></a>
                 <div class="dropdown">
                     <a href="/Info Project/Engineer.html">สาขาด้านวิศวกรรมศาสตร์</a>
                     <a href="/Info Project/Doctor.html">สาขาด้านสุขภาพ</a>
@@ -34,8 +34,8 @@
                  
                     
                   </div></li>
-            <li><a href="videoCategory.html">วิดีโอทั้งหมด</a></li>
-            <li><a href="Contact/contact.html">เกี่ยวกับเรา</a></li>
+            <li><a href="/Video Category/videoCategory.html">วิดีโอทั้งหมด</a></li>
+            <li><a href="/Contact/contact.html">เกี่ยวกับเรา</a></li>
           </ul>
           
       </div>
@@ -44,15 +44,15 @@
         <div class="slideshow-container">
 
           <div class="mySlides newsFade">
-            <a href="https://www.dek-d.com/tcas/55296/"><img src="img/news/TcasR4.jpg" alt="TCAS round4" style="width:100%"></a> 
+            <a href="https://www.dek-d.com/tcas/55296/"><img src="../img/news/TcasR4.jpg" alt="TCAS round4" style="width:100%"></a> 
           </div>
           
           <div class="mySlides newsFade">
-            <a href="https://campus.campus-star.com/education/144178.html"><img src="img/news/Tcasflow.jpg" alt="TCAS Flowchart" style="width:100%">        
+            <a href="https://campus.campus-star.com/education/144178.html"><img src="../img/news/Tcasflow.jpg" alt="TCAS Flowchart" style="width:100%">        
           </div>
 
           <div class="mySlides newsFade">
-            <a href="https://www.mytcas.com/news/TCAS64-1"><img src="img/news/TcasRegis.jpg" alt="TCAS Register" style="width:100%"></a>
+            <a href="https://www.mytcas.com/news/TCAS64-1"><img src="../img/news/TcasRegis.jpg" alt="TCAS Register" style="width:100%"></a>
           </div>
           
 
@@ -93,7 +93,7 @@
             <h5 style="font-size: 16px;  text-align: center; ">อยากได้แนวทางของตัวเองหรอ ?</h5>
             <div class=centerBtn>
 
-              <button class="TestBtn" onclick="document.location='questionnaire/question.html'">ทำแบบทดสอบเลย!</button>
+              <button class="TestBtn" onclick="document.location='/questionnaire/question.html'">ทำแบบทดสอบเลย!</button>
             </div>
           </div>
 
@@ -134,13 +134,13 @@
               </div>
               <div class="columnright">
                 <div style="position: relative; left: 0; top: 0;">
-                  <img id="imgACT" src="img/art/Actors.jpg" class="under"/>
-                  <img id="imgLAW" src="img/art/Lawyer.jpg" class="under"/>
-                  <img id="imgTEA" src="img/art/Teacher.jpg" class="under"/>
-                  <img id="imgSCI" src="img/art/Scientist.jpg" class="under"/>
-                  <img id="imgBUS" src="img/art/Business.jpg" class="under"/>
-                  <img id="imgDOC" src="img/art/Doctor.jpg" class="under"/>
-                  <img id="imgENG" src="img/art/Engineer.jpg" class="under"/>
+                  <img id="imgACT" src="../img/art/Actors.jpg" class="under"/>
+                  <img id="imgLAW" src="../img/art/Lawyer.jpg" class="under"/>
+                  <img id="imgTEA" src="../img/art/Teacher.jpg" class="under"/>
+                  <img id="imgSCI" src="../img/art/Scientist.jpg" class="under"/>
+                  <img id="imgBUS" src="../img/art/Business.jpg" class="under"/>
+                  <img id="imgDOC" src="../img/art/Doctor.jpg" class="under"/>
+                  <img id="imgENG" src="../img/art/Engineer.jpg" class="under"/>
                 </div>
               </div>
             </div>
@@ -158,21 +158,21 @@
               
                        <div class="col-md-4 col-sm-6 col-xs-12">
                          <!-- <span class="logo"><img src="Z.png" width="100" height="100"></span> -->
-                         <span class="logo"><img src="LOGO.png" width="50%" height="50%"></span>
+                         <span class="logo"><img src="/img/art/LOGO.png" width="50%" height="50%"></span>
                        </div>
                        
                        <div class="col-md-4 col-sm-6 col-xs-12">
                            <ul class="menu">
                                 <span>Menu</span>    
                                 <li><a href="index.html">Home</a></li>
-                                <li><a href="videoCategory.html">Video</a></li>
+                                <li><a href="/Video Category/videoCategory.html">Video</a></li>
                             </ul>
                        </div>
                   
                        <div class="col-md-4 col-sm-6 col-xs-12">
                          <ul class="address">
                                <span>About us</span>       
-                               <li><i class="fa fa-envelope" aria-hidden="true"></i> <a href="Contact/contact.html">Contact</a></li> 
+                               <li><i class="fa fa-envelope" aria-hidden="true"></i> <a href="/Contact/contact.html">Contact</a></li> 
                           </ul>
                       </div>
                   
@@ -183,9 +183,11 @@
       </div>
 
     </div>
-    <script src="main.js"></script>
+    <script src="faculty-img-display.js"></script>
+    <script src="news-slide.js"></script>
+    <script src="video-display.js"></script>
     <script src="//d3js.org/d3.v3.min.js"></script> -->
-    <script src="TCASvisual.js"></script>
+    <script src="tcas-bargraph-visual.js"></script>
   </body>
   
 </html>
