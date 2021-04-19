@@ -1,4 +1,3 @@
-// News feed slide
 var slideIndex = 1;
 showSlides(slideIndex);
 
